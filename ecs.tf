@@ -12,7 +12,7 @@ resource "aws_ecs_task_definition" "q2-task" {
   container_definitions = jsonencode([
       {
           name          ="helloWorld"
-          image         ="753392824297.dkr.ecr.eu-central-1.amazonaws.com/norel-ecr:latest"
+          image         =""
           essential     = true
           portMappings = [{
              protocol      = "tcp"
